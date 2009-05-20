@@ -8,3 +8,5 @@ Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1
 	<embed src="hYTPlayer.swf?vidId=tBb4cjjj1gI" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
 </object>
 }}}
+
+(Note that the codebase must begin with https.)
