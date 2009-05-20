@@ -9,6 +9,6 @@ Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1
 </object>
 }}}
 
-(Note that the codebase must begin with https.)
+_(Note that the codebase must begin with https.)_
 
 The original FLA, YTPlayer.fla, is also included for reference.
