@@ -5,7 +5,7 @@ Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1
 	<param name="movie" value="YTPlayer.swf?vidId=tBb4cjjj1gI" />
 	<param name="allowFullScreen" value="true" />
 	<param name="allowscriptaccess" value="always" />
-	<embed src="hYTPlayer.swf?vidId=tBb4cjjj1gI" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+	<embed src="YTPlayer.swf?vidId=tBb4cjjj1gI" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
 </object>
 }}}
 
