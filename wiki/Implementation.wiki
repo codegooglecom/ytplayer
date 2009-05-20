@@ -1,4 +1,4 @@
-Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1gI is the YouTube video's ID):
+Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1gI is the !YouTube video's ID):
 
 {{{
 <object width="425" height="344" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0">
@@ -11,4 +11,4 @@ Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1
 
 (Note that the codebase must begin with https.)
 
-The original FLA, YTPlayer.fla, is also included for your reference.
+The original FLA, YTPlayer.fla, is also included for reference.
