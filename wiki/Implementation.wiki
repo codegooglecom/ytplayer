@@ -6,8 +6,8 @@ codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#v
 	<param name="movie" value="YTPlayer.swf?vidId=tBb4cjjj1gI" />
 	<param name="allowFullScreen" value="true" />
 	<param name="allowscriptaccess" value="always" />
-	<embed src="YTPlayer.swf?vidId=tBb4cjjj1gI" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" 
-width="425" height="344"></embed>
+	<embed src="YTPlayer.swf?vidId=tBb4cjjj1gI" type="application/x-shockwave-flash" allowscriptaccess="always" 
+allowfullscreen="true" width="425" height="344"></embed>
 </object>
 }}}
 
