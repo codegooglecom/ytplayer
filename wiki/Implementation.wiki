@@ -1,7 +1,8 @@
 Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1gI is the !YouTube video's ID):
 
 {{{
-<object width="425" height="344" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+<object width="425" height="344" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0">
 	<param name="movie" value="YTPlayer.swf?vidId=tBb4cjjj1gI" />
 	<param name="allowFullScreen" value="true" />
 	<param name="allowscriptaccess" value="always" />
