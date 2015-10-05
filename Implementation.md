@@ -1,0 +1,59 @@
+Upload YTPlayer.swf to your server, then use the following HTML (where tBb4cjjj1gI is the YouTube video's ID):
+
+```
+<object width="425" height="344" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0">
+	<param name="movie" value="YTPlayer.swf?vidId=tBb4cjjj1gI" />
+	<param name="allowFullScreen" value="true" />
+	<param name="allowscriptaccess" value="always" />
+	<embed src="YTPlayer.swf?vidId=tBb4cjjj1gI" type="application/x-shockwave-flash" allowscriptaccess="always" 
+allowfullscreen="true" width="425" height="344"></embed>
+</object>
+```
+
+_(Note that the codebase must begin with https.)_
+
+The original FLA, YTPlayer.fla, is also included for reference.
+
+```
+Stage.align="TL";
+Stage.scaleMode="noscale";
+
+System.security.allowDomain("http://www.youtube.com");
+System.security.loadPolicyFile("http://www.youtube.com/crossdomain.xml");
+
+//create a MovieClip to load the player into
+ytplayer=createEmptyMovieClip("ytplayer",1);
+
+//create a listener object for the MovieClipLoader to use
+ytPlayerLoaderListener={};
+var loadInterval:Number;
+
+//When the player clip first loads, we start an interval to check for when the player is ready
+ytPlayerLoaderListener.onLoadInit=function(){
+   loadInterval=setInterval(checkPlayerLoaded,250);
+}
+
+function checkPlayerLoaded():Void{
+   //once the player is ready, we can subscribe to events
+   if(ytplayer.isPlayerLoaded()){
+      ytplayer.setSize(Stage.width,Stage.height);
+      clearInterval(loadInterval);
+   }
+}
+
+//create a MovieClipLoader to handle the loading of the player
+ytPlayerLoader=new MovieClipLoader();
+ytPlayerLoader.addListener(ytPlayerLoaderListener);
+
+//load the player
+ytPlayerLoader.loadClip("http://www.youtube.com/v/"+vidId+"&hl=en&fs=1",ytplayer);
+
+//adjust size when user clicks full-screen
+var listener:Object=new Object();
+Stage.addListener(listener);
+listener.onFullScreen=respondFunction;
+function respondFunction(){
+   ytplayer.setSize(Stage.width,Stage.height);
+}
+```
